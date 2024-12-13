@@ -5,7 +5,7 @@ import { albertSans, dmSans, manrope } from "@/fonts/fonts"
 
 export const HeroSection = () => {
     return (
-        <div className=" h-screen w-full">
+        <div id="home" className=" h-screen w-full">
             <div className="bg-cover bg-center h-screen w-full" style={{
                     backgroundImage: `url('/Images/HeroSectionImage.jpg')`,
                 }}>
