@@ -8,7 +8,7 @@ import { ArrowRight } from "./ui/svg/ArrowRight"
 
 export const About = () => {
     return (
-        <div className="min-h-screen w-full bg-gradient-to-b from-[#000000] to-[#1E1E1E] text-white py-24 px-16">
+        <div id="ecosystem" className="min-h-screen w-full bg-gradient-to-b from-[#000000] to-[#1E1E1E] text-white py-24 px-16">
             <div className="flex flex-col items-center text-center gap-4">
                 <h2 className={`${interSans.className} font-medium text-lg text-[#E4B325]`}>ECOSYSTEM</h2>
                 <p className={`${albertSans.className} font-normal text-2xl w-[45%]`}>Unlocking the Future of Finance with a Unified Ecosystem for Digital and Traditional Investments</p>
