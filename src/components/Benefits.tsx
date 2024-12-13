@@ -14,7 +14,7 @@ export const BenefitOptions = [
 
 export const Benefits = () => {
     return (
-        <div className="min-h-screen w-full bg-gradient-to-b from-[#000000] to-[#1E1E1E] text-white py-24 px-16 flex gap-16">
+        <div id="benefits" className="min-h-screen w-full bg-gradient-to-b from-[#000000] to-[#1E1E1E] text-white py-24 px-16 flex justify-between">
             <div className="flex flex-col gap-4 w-[30%]">
                 <h1 className={`${interSans.className} text-[#E4B325] text-lg font-medium`}>Benefits</h1>
                 <h1 className={`${dmSans.className} text-4xl`}>Why Choose Vestion for Your Financial Journey?</h1>
