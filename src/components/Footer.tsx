@@ -12,7 +12,7 @@ export const FooterDetails = [
 export const Footer = () => {
     return (
         <div className="w-full h-[450px] bg-gradient-radial from-[#1E1E1E] to-[#121212] text-white px-16">
-            <div className="flex gap-16 pt-16 pb-12">
+            <div className="flex justify-between pt-16 pb-12">
                 {FooterDetails.map((detail, index) => (
                     <div key={index} className="flex flex-col gap-6">
                         <h1 className={`${interSans.className} font-medium text-xl`}>{detail.title}</h1>
