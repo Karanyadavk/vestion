@@ -1,16 +1,25 @@
+"use client"
+
 import Icon from "../../public/Images/Icon.png"
 import Image from "next/image"
 import { Button } from "./ui/Button";
 import { dmSans, interSans } from "@/fonts/fonts";
 
 export const menuOptions = [
-    { name: 'Home', href: '/home' },
-    { name: 'Ecosystem', href: '/ecosystem' },
-    { name: 'Benefits', href: '/benefits' },
-    { name: 'Tokenomics', href: '/tokenomics' },
+    { name: 'Home', href: 'home' },
+    { name: 'Ecosystem', href: 'ecosystem' },
+    { name: 'Benefits', href: 'benefits' },
+    { name: 'Tokenomics', href: 'tokenomics' },
 ];
 
 export const Navbar = () => {
+    const scrollToSection = (id:string) => {
+        const section = document.getElementById(id);
+        if (section) {
+          section.scrollIntoView({ behavior: "smooth" });
+        }
+      };
+
     return (
         <div className="bg-[#00010A] text-white flex items-center justify-between px-16 py-9">
             <div className="flex items-center gap-3">
@@ -21,8 +30,8 @@ export const Navbar = () => {
                 {menuOptions.map((option, index) => (
                     <a
                     key={index}
-                    href={option.href}
-                        className={`text-white hover:text-gray-300 font-normal ${interSans.className} uppercase`}
+                    onClick={()=>scrollToSection(`${option.href}`)}
+                        className={`text-white hover:text-gray-300 hover:cursor-pointer font-normal ${interSans.className} uppercase`}
                     >
                         {option.name}
                     </a>
